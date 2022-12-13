@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>To do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a7f93080c3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <img id="logo" src="myplanner2-removebg-preview.png" alt="logo">
+            <span id="header-text" class="head">MY TO DO LIST</span>
+        </div>
+        <div class="container">
+            <div id="task-form" class="task-form">
+                <div class="head">Add Task</div>
+                <!--FORM-->
+                <form id="form" method="post" action="#">
+                    <p id="task-box"><label>Task Name:
+                            <input id="task" name="task" type="text" size="25">
+                        </label></p>
+
+                    <!--category-->
+                    <p><label>Category:
+                            <select name="category" id="category">
+                                <option value="nothing">----</option>
+                                <option value="Study">Study</option>
+                                <option value="Sport">Sport</option>
+                                <option value="Home">Home</option>
+                            </select>
+                        </label></p>
+
+                    <p>
+                        <!--PRIORTIY-->
+                        Priority:<br>
+                        <label>
+                            <input id="high" name="priority" type="radio" value="High">
+                            High
+                        </label>
+                        <label>
+                            <input id="medium" name="priority" type="radio" value="Medium">
+                            Medium
+                        </label>
+                        <label>
+                            <input id="low" name="priority" type="radio" value="Low">
+                            Low
+                        </label>
+                    </p>
+                    <!--date-->
+                    <div class="date-class" id="date-class">
+                        <label>Deadline:<br>
+                            <input id="date" name="deadline" type="date"></label>
+                    </div>
+
+                    <!--button-->
+                    <span class="submit-btn">
+                        <input type="submit" id="submit" class="btn-style" value="Submit">
+                    </span>
+                    <span class="clear-btn">
+                        <input type="reset" value="Clear" class="btn-style">
+                    </span>
+                </form>
+
+            </div>
+
+            <div class="task-container">
+
+
+                <div class="notCompleted">
+
+                    <span class="head">To Do List:</span>
+                    <span id="today-date"></span>
+                    <ul class="Tasklist" id="Tasklist">
+                    </ul><span>
+                        <button class="done" type="button" id="done-btn">done</button>
+
+                    </span>
+                </div>
+
+                <div class="Completed">
+                    <div class="head">Completed Tasks</div>
+                    <ul class="completedList" id="completedList">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>&copy;copyright @APRIL 2022 By Reema AlDumikhi</div>
+            <a href="mailto:441201071@student.ksu.edu.sa"> <i class="fa fa-envelope" aria-hidden="true"></i>Email</a>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+
+</body>
+
+</html>

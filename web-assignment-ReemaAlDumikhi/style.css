@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  background: linear-gradient(139deg,#fbf9fa,#C69797);
+}
+
+ .footer{
+  position: sticky;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+  text-align: center;
+  color: #892d48;
+  background: linear-gradient(139deg,#fbf9fa,#C69797);
+}
+a{
+  color: #892d48;
+}
+
+.header{
+  padding: 0.5rem;
+  display: flex;
+  top:0; left: 0;
+  position:sticky;
+  align-items: center;
+  background: linear-gradient(139deg,#fbf9fa,#C69797);
+}
+#logo{
+  margin: 10px;
+  height: 80%;
+  width: 125px;
+  float: left;
+  height: 6rem;
+}
+#header-text{
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container{
+  max-width: 1100px;
+  height: 500px;
+  padding-top:50px ;
+  padding: 10px;
+  margin: 0 auto;
+  
+}
+
+ .notCompleted , .Completed ,.task-form {
+  width: 350px;
+  height: 450px;
+  background-color: #eee8eb;
+  float: left;
+  margin: 5px ;
+  padding: 40px;
+  border-radius: 10px;
+}
+.notCompleted , .Completed{
+  overflow:scroll;
+
+}
+.head{
+  font-size: 30px;
+  text-align: center;
+  color:#6e283d
+}
+
+ul{
+  list-style: none;
+}
+ul li{
+  width: 95%;
+  border-radius:20px;
+  padding: 18px;
+  margin: 5px 0;
+  font-size: 24px;
+
+}
+ .btn-style{
+  border-radius: 3px;
+  border-color: #0000;
+  background-color: #eec8c8;
+  color: #6e283d;
+  padding: 5px;
+  height: auto;
+  float: right;
+  margin-bottom: 0;
+  margin-top: 60%;
+  margin-left: 10px;
+  width: 65px;
+}
+.done{
+  border-radius: 3px;
+  border-color: #0000;
+  background-color: #eec8c8;
+  color: #6e283d;
+  padding: 5px;
+  height: auto;
+  float: right;
+  margin-bottom: 0;
+  /*margin-top: 130%;*/
+  margin-left: 10px;
+  width: 65px;
+}
+#today-date{
+  color: #6e283d;
+  padding-left: 10px;
+  padding-top: 7px;
+  float: right;
+}
+form{
+  color: #6e283d;
+}
+input , select{
+  background-color: #e6c6c6;
+  border-color: #6e283d;
+  border-style: hidden;
+  height:20px;
+  margin: 5px;
+}
+li .checkbox{
+  float: right;
+}
+li .img{
+  float: right;
+}
+.task-container ul li {
+  font-size: 15px;
+}
+#task-error{
+  color: red;
+}
+.expired{
+  color: red;
+  margin-right: auto;
+}
+.warning{
+  color: yellow;
+}
+.doneimg{
+  color: green;
+}
